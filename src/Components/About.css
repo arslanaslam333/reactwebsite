@@ -1,0 +1,128 @@
+/* Updated CSS for .container4 */
+
+.container4 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: transparent; /* Set background color to transparent */
+  padding: 2rem;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.container4:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Slight background color change on hover */
+}
+
+.main {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.159);
+  border-radius: 70px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Added hover effects */
+}
+
+.main:hover {
+  transform: scale(1.05); /* 3D hover effect: scale on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Added more prominent shadow on hover */
+}
+
+.btn1 {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgba(0, 128, 0, 0.286);
+  color: #ffffff;
+  font-size: larger;
+  box-shadow: 10px 5px 10px lightgreen;
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.btn1:hover {
+  background-color: #007700; /* Change background color on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .container4 {
+    max-width: 1300px;
+    padding: 3rem;
+  }
+
+  .main {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding: 10rem;
+  }
+}
+
+.container5 {
+  color: #ffffff;
+  height: auto;
+  margin: 0 auto;
+  background-color: black; /* Set background color to transparent */
+  text-align: center;
+  padding: 2rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.main2 {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.trip {
+  text-align: center;
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .container5 {
+    background-color: black;
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .main2 {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 668px) {
+  .container5 {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+}
+
+@media (max-width: 320px) {
+  .main2 {
+    margin: 0 auto;
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto;
+  }
+}

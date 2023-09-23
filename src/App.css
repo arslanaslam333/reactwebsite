@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+body {
+  font-family: system-ui;
+  background-image: url(./Components/images/Climb.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Logo {
+  width: 100%; /* Adjusted width for small screens */
+  height: auto; /* Adjusted height for small screens */
+  display: flex;
+  align-items: center;
+  border-radius: 70px;
+  justify-content: center; /* Center the text */
+  padding: 1em; /* Adjusted padding for small screens */
+  background-color:  rgba(0, 0, 0, 0.15); /* Adjusted background color */
+}
+.Logo .name{
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+.header{
+  background-color: #0055d37d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.small {
+  width: 60px; /* Adjusted width for small screens */
+  height: 60px; /* Adjusted height for small screens */
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  text-decoration: none;
+  color: rgb(211, 219, 225);
+  list-style: none;
+}
+
+.link:hover {
+  color: white       ;
+  font-size: larger;
+}
+
+Navbar {
+  max-width: 100%;
+}
+
+.heading {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em; /* Adjusted padding for small screens */
+  width: 100%; /* Full width for small screens */
+  height: auto; /* Auto height for small screens */
+  margin-top: 1em; /* Adjusted margin for small screens */
+  opacity: 0.7;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.246);
+  transition-duration: 0.7s;
+  transform: translateZ(0);
+  cursor: pointer;
+  margin-bottom: 1em;
+  gap: 5px;
+  border-radius: 15px;
+}
+
+/* Hover effect */
+.heading:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.containers{
+  /* background-color: red; */
+  width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.container1{
+  /* background-color: black; */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.para {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.29);
+  width: 100%; /* Full width for small screens */
+  padding: 7px;
+  border-radius: 10px;
+  height: auto; /* Auto height for small screens */
+  transition: color 0.3s, background-color 0.3s;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Hover effect */
+.para:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Media query for very small screens */
+@media (max-width: 400px) {
+  .Logo {
+    padding: 0.5em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .small {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heading {
+    padding: 0.5em;
+  }
+
+  .para {
+    padding: 5px;
+  }
+}
+.container3{
+  width: 100%;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+/* ... (your existing CSS code) ... */
+
+.btn {
+  background-color: rgba(0, 255, 255, 0.307);
+  color: #ffffff;
+  width: 200px; /* Default width for larger screens */
+  height: 50px; /* Default height for larger screens */
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: larger;
+  box-shadow: 10px 5px 10px lightgreen;
+}
+
+/* Media query for very small screens */
+@media (max-width: 400px) {
+  .btn {
+    width: 150px; /* Adjusted width for very small screens */
+    height: 40px; /* Adjusted height for very small screens */
+    font-size: medium; /* Adjusted font size for very small screens */
   }
 }
